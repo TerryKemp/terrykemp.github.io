@@ -1,0 +1,15 @@
+body {
+      text-align: center;
+      background: url("https://images.pexels.com/photos/560964/pexels-photo-560964.jpeg?cs=srgb&dl=american-flag-close-up-design-560964.jpg&fm=jpg");
+      background-position:center;
+      color: black;
+      font-family:  helvetica;
+    }
+    p{
+      font-size: 40px;
+    }
+    a{
+      border: 0;
+    padding: 10px;
+    font-size: 18px;
+    }
