@@ -1,8 +1,8 @@
 body {
       text-align: center;
-      background: url("https://images.pexels.com/photos/560964/pexels-photo-560964.jpeg?cs=srgb&dl=american-flag-close-up-design-560964.jpg&fm=jpg");
+      background: url("https://monkeysandmountains.com/wp-content/uploads/2014/02/monkeys_and_mountains_adventure_travel_1200x500rz.jpg");
       background-position:center;
-      color: black;
+      color: #50c878;
       font-family:  helvetica;
     }
     p{
@@ -12,4 +12,9 @@ body {
       border: 0;
     padding: 10px;
     font-size: 18px;
+    }
+
+    .clearfix {
+      font-style: moonscape;
+      
     }
