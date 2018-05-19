@@ -1,0 +1,9 @@
+Cannon.onReady = function(){
+	Cannon.use('*');
+
+	canvas = new Cannon.Canvas('canvas');
+	
+	var background = new Rectangle(0, 0, canvas.width, canvas.height);
+	canvas.addChild(background);
+	background.fillStyle = "#00cc00";
+};
