@@ -1,0 +1,20 @@
+body {
+      text-align: center;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8M7S0WEDx-Dkj15z12GJBEnHDw45OwBEqCuUXNIyKMAPRdxr5w");
+      background-position:center;
+      color: #50c878;
+      font-family:  helvetica;
+    }
+    p{
+      font-size: 40px;
+    }
+    a{
+      border: 0;
+    padding: 10px;
+    font-size: 18px;
+    }
+
+    .clearfix {
+      font-style: moonscape;
+      
+    }
