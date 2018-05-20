@@ -99,7 +99,7 @@
 	animation: push 12.5s linear infinite 0s;
 	-ms-animation: push 12.5s linear infinite 0s;
 	-webkit-animation: push 12.5s linear infinite 0s;
-	color: black;
+	color: yellow;
 	opacity: 0;
 	overflow: hidden;
 	position: center;
@@ -108,7 +108,7 @@
 	animation-delay: 2.5s;
 	-ms-animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
-  color: yellow;
+  color: red;
 }
 .pushEffect span:nth-child(3){
 	animation-delay: 5s;
@@ -120,7 +120,7 @@
 	animation-delay: 7.5s;
 	-ms-animation-delay: 7.5s;
   -webkit-animation-delay: 7.5s;
-  color: white;
+  color:black;
 }
 
 /*Push Effect Animation*/
