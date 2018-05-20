@@ -35,7 +35,7 @@
     font-size: 18px;
     }
     .copyright {
-      text-decoration: black;
+      text-decoration: underline;
     }
 
     .clearfix {
@@ -55,20 +55,22 @@
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    text-decoration: underline;
+    font-size: 19px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color:yellow;
     color: black;
+    text-decoration-color: black
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+  
 }
 .copyright{
   font-size: 15px;
@@ -80,6 +82,7 @@
 .email {
   color: #4CAF50;}
   
+
 
 /*Wrapper*/
 .wrapper{
@@ -96,30 +99,30 @@
 	text-indent: 0px;
 }
 .pushEffect span{
-	animation: push 12.5s linear infinite 0s;
-	-ms-animation: push 12.5s linear infinite 0s;
-	-webkit-animation: push 12.5s linear infinite 0s;
+	animation: push 10s linear infinite 0s;
+	-ms-animation: push 10s linear infinite 0s;
+	-webkit-animation: push 10s linear infinite 0s;
 	color: yellow;
 	opacity: 0;
 	overflow: hidden;
 	position: center;
 }
 .pushEffect span:nth-child(2){
-	animation-delay: 2.5s;
-	-ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
+	animation-delay: 1s;
+	-ms-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
   color: red;
 }
 .pushEffect span:nth-child(3){
-	animation-delay: 5s;
-	-ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
+	animation-delay: 3s;
+	-ms-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
   color: green;
 }
 .pushEffect span:nth-child(4){
-	animation-delay: 7.5s;
-	-ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
   color:black;
 }
 
