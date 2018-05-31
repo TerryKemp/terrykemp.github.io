@@ -1,0 +1,371 @@
+
+
+/*Body layout*/
+
+body {
+    font-family: cursive, arial, sans-serif;
+    background-image: url("https://i.warosu.org/data/tg/img/0321/06/1400219320024.jpg");
+    background-size: cover;
+    color: red;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+header {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-left {
+    padding: 50px 0px 25px 20px;
+}
+
+.main-right {
+    padding: 50px 20px 25px 0px;
+}
+
+.end-messages {
+    position: absolute;
+    left: 43%;
+    top: 30%;
+}
+
+footer {
+    padding: 50px 20px;
+    font-family: arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h2 {
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 26px;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+li {
+    display: inline;
+    font-size: 28px;
+}
+
+.word {
+    font-size: 30px;
+    letter-spacing: 10px;
+    width: 400px;
+    margin: 30px auto 0 auto;
+    text-decoration: bold;
+}
+
+.alph-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.alph {
+    margin: 7px;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#result,
+#play-again,
+#answer {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 30px auto 0 auto;
+    text-shadow: -2px 2px 6px #000000;
+}
+
+#play-again,
+#answer {
+    cursor: pointer;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+
+.cat:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#play-again:hover,
+#answer:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.alph:hover {
+    opacity: 0.5;
+}
+
+
+
+.stand-top {
+    border-top: 15px solid brown;
+    border-left: 20px solid brown;
+    border-right: 20px solid brown;
+    width: 179px;
+    height: 30px;
+    margin-left: 90px;
+}
+
+.stand-left,
+.man {
+    float: left;
+    width: 200px;
+}
+
+.pole {
+    height: 275px;
+    width: 20px;
+    background: brown;
+    margin: 0 auto;
+  
+}
+
+.stand-base {
+    border-top: 15px solid burlywood;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: yellow;
+    
+    
+    
+}
+
+.man {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.hidden {
+    display: none;
+}
+
+.head {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    left: 30%;
+    margin: 0 auto;
+}
+
+.eyes,
+.frown {
+    font-weight: bold;
+    opacity: 0;
+    font-family: arial, sans-serif;
+}
+
+.eyes {
+    position: absolute;
+    top: 6%;
+    left: 45%;
+}
+
+.frown {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    font-size: 24px;
+}
+
+.torso {
+    height: 100px;
+    margin: 0 auto;
+}
+
+.torso,
+.arm,
+.leg {
+    width: 6px;
+    background: white;
+}
+
+.arm,
+.leg {
+    height: 75px;
+}
+
+.arm {
+    left: 49%;
+    top: 18%;
+    transform-origin: bottom;
+    position: absolute;
+}
+
+.left-arm {
+    transform: rotate(-55deg);
+}
+
+.right-arm {
+    transform: rotate(55deg);
+}
+
+.leg {
+    transform-origin: bottom;
+    position: absolute;
+    left: 49%;
+    top: 31%;
+}
+
+.left-leg {
+    transform: rotate(-135deg);
+}
+
+.right-leg {
+    transform: rotate(135deg);
+}
+
+@media screen and (max-width: 870px) {
+    main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer {
+        margin-top: auto;
+    }
+    .main-right {
+        order: -1;
+        margin-top: 0px;
+    }
+    .end-messages {
+        left: 37%;
+        top: 40%;
+    }
+    #answer {
+        padding-bottom: 10px;
+    }
+    .word {
+        font-size: 26px;
+        width: 100%;
+        margin: 30px auto;
+    }
+    h2,
+    li {
+        font-size: 24px;
+    }
+    .main-left,
+    .main-right {
+        padding: 0 10px;
+    }
+    .main-left {
+        margin: 0 auto;
+    }
+    .stand-left {
+        width: 100px;
+    }
+    .stand-top {
+        height: 10px;
+            width: 120px;
+            margin-left: 40px;
+    }
+    .pole {
+        height: 140px;
+      
+    }
+    .stand-base {
+        width: 150px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .man {
+        height: 100px;
+        position: relative;
+        width: 180px;
+        margin: 0 auto;
+
+    }
+    .torso {
+        height: 50px;
+    }
+    .arm,
+    .leg {
+        height: 35px;
+    }
+    .arm {
+        top: 40%;
+    }
+    .leg {
+        top: 64%
+    }
+    .head {
+        width: 40px;
+        height: 40px;
+    }
+    .eyes {
+        top: 8%;
+        left: 45%;
+        letter-spacing: -1px;
+    }
+    .frown {
+        top: 15%;
+        left: 49%;
+    }
+    .alph-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2,
+    li,
+    .alph,
+    #result,
+    #play-again,
+    #answer {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .word {
+        font-size: 18px;
+    }
+    .alph {
+        font-size: 16px;
+    }
+    footer {
+        padding: 0px 20px;
+    }
+}
