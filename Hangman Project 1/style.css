@@ -69,7 +69,7 @@ li {
     display: inline;
     font-size: 25px;
     text-decoration: underline;
-    -moz-text-decoration-color: blue;
+    text-decoration-color: blue;
     cursor: crosshair;
 }
 
@@ -191,7 +191,7 @@ li {
     font-weight: bolder;
     opacity: 0;
     font-family: arial, sans-serif;
-    text-decoration: &bull, &nbsp, &bull;
+ ;
 }
 
 .eyes {
