@@ -68,7 +68,8 @@ ul {
 li {
     display: inline;
     font-size: 25px;
-    text-decoration: underline, blue;
+    text-decoration: underline;
+    -moz-text-decoration-color: blue;
     cursor: crosshair;
 }
 
@@ -77,7 +78,7 @@ li {
     letter-spacing: 5px;
     width: 450px;
     margin: 30px auto 0 auto;
-    text-decoration: bold;
+    text-emphasis:  bold;
 }
 
 .alph-wrapper {
@@ -106,7 +107,7 @@ li {
     font-size: 30px;
     letter-spacing: 2px;
     margin: 20px auto 0 auto;
-    text-emphasis-style: bold;
+    text-emphasis: bold;
 }
 
 #play-again,
@@ -190,14 +191,14 @@ li {
     font-weight: bolder;
     opacity: 0;
     font-family: arial, sans-serif;
-    text-decoration: &times, &nbsp, &times;
+    text-decoration: &bull, &nbsp, &bull;
 }
 
 .eyes {
     position: absolute;
     top: 6%;
     left: 45%;
-    text-decoration: &times, &nbsp, &times;
+    text-decoration: &bull, &nbsp, &bull;
 }
 
 .frown {

@@ -28,7 +28,7 @@ function createLetters () {
   }
 }
 createLetters()
-/* topics */
+/* topics choices */
 
 var movies = ['die hard', 'the notebook', 'cat in the hat', 'the grinch who stole christmas']
 var songs = ['final countdown', 'the show must go on', 'we will rock you', 'banana pancakes']
