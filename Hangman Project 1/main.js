@@ -16,20 +16,25 @@ function to play again
 /* why are you all over the place, organize your code and make it look neater
 check your functions to make sure they are good and work. once they work make them pretty
 stop second guessing how it is. */
+
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 function createLetters () {
   for (var i = 0; i < letters.length; i++) {
-    $('<div></div>').attr({ 'class': 'alph', 'id': letters[i] }).text(letters[i]).appendTo('.alph-wrapper')
+    $('<div></div>').attr({
+      'class': 'alph',
+      'id': letters[i]
+    }).text(letters[i]).appendTo('.alph-wrapper')
   }
 }
 createLetters()
 /* topics */
+
 var movies = ['die hard', 'the notebook', 'cat in the hat', 'the grinch who stole christmas']
 var songs = ['final countdown', 'the show must go on', 'we will rock you', 'banana pancakes']
 var books = ['the dove', 'hitchhikers guide to the galaxy', 'zathura', 'fiddler on the roof']
 
-var category = $('.cat')
+var category = $('.category')
 var categoryList
 var player = ' '
 var array = null
@@ -87,11 +92,27 @@ function startGame () {
 
   /* shows letter already picked */
   getAnswer.on('click', showAnswer)
-  getAnswer.on('click', function () { getAnswer.css({ 'opacity': '0', 'cursor': 'default' }) })
+  getAnswer.on('click', function () {
+    getAnswer.css({
+      'opacity': '0',
+      'cursor': 'default'
+    })
+  })
 
-  function letterUsed () { $(this).css({ 'opacity': '0.2', 'cursor': 'auto' }) }
-  function letterSelect () { letterPick = $(this).attr('id') }
-  function list () { allPicks.push(letterPick) }
+  function letterUsed () {
+    $(this).css({
+      'opacity': '0.2',
+      'cursor': 'auto'
+    })
+  }
+
+  function letterSelect () {
+    letterPick = $(this).attr('id')
+  }
+
+  function list () {
+    allPicks.push(letterPick)
+  }
 
   /* check right or wrong */
   function checkPick () {
@@ -104,6 +125,7 @@ function startGame () {
   }
 
   /* show letters */
+
   function reveal () {
     correct = array.map((letter) => {
       if (allPicks.includes(letter)) {
@@ -121,7 +143,7 @@ function startGame () {
       playAgain.text('play again')
     }
   }
-  /* show man on wrong */
+  /* show man on wrong answer */
   function showMan () {
     if (wrong.length === 1) {
       $('.head').removeClass('hidden')
@@ -138,7 +160,11 @@ function startGame () {
       getAnswer.text('get answer')
       result.text('YOU LOSE')
       displayHidden.css('opacity', '0.3')
-      $('.eyes, .frown').animate({ 'opacity': '1' }, { 'duration': 900 })
+      $('.eyes, .frown').animate({
+        'opacity': '1'
+      }, {
+        'duration': 900
+      })
       playAgain.text('Try Again')
     }
   }
@@ -150,6 +176,7 @@ function startGame () {
 }
 
 $('#play-again').on('click', replay)
+
 function replay () {
   location.reload()
 }
