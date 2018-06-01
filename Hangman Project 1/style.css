@@ -1,19 +1,19 @@
-
-
-/*Body layout*/
+/* changing torso to body in all documents will not work.
+neither will changing stand-top/base.  I do not know why
+*/
 
 body {
     font-family: cursive, arial, sans-serif;
     background-image: url("https://i.warosu.org/data/tg/img/0321/06/1400219320024.jpg");
     background-size: cover;
     color: red;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 auto;
     text-align: center;
     min-height: 100vh;
+    /* only good for newer browers, but works on everything i have tried */
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
 }
 
 header {
@@ -26,7 +26,7 @@ main {
 }
 
 .main-left {
-    padding: 50px 0px 25px 20px;
+    padding: 40px 5px 25px 20px;
 }
 
 .main-right {
@@ -35,44 +35,47 @@ main {
 
 .end-messages {
     position: absolute;
-    left: 43%;
-    top: 30%;
+    left: 40%;
+    top: 35%;
 }
 
 footer {
     padding: 50px 20px;
-    font-family: arial, sans-serif;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
-
 h1 {
-    font-size: 40px;
-    letter-spacing: 3px;
+    font-size: 50px;
+    letter-spacing: 5px;
     margin: 0;
     padding-top: 20px;
+    text-decoration: underline;
 }
 
 h2 {
     padding-bottom: 30px;
     letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 ul {
     margin: 0 auto;
     padding: 0;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 li {
     display: inline;
-    font-size: 28px;
+    font-size: 25px;
+    text-decoration: underline, blue;
+    cursor: crosshair;
 }
 
 .word {
     font-size: 30px;
-    letter-spacing: 10px;
-    width: 400px;
+    letter-spacing: 5px;
+    width: 450px;
     margin: 30px auto 0 auto;
     text-decoration: bold;
 }
@@ -92,8 +95,8 @@ li {
     font-size: 20px;
     border: 1px solid white;
     background-color: black;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    cursor: crosshair;
     text-transform: uppercase;
 }
 
@@ -102,34 +105,31 @@ li {
 #answer {
     font-size: 30px;
     letter-spacing: 2px;
-    margin: 30px auto 0 auto;
-    text-shadow: -2px 2px 6px #000000;
+    margin: 20px auto 0 auto;
+    text-emphasis-style: bold;
 }
 
 #play-again,
 #answer {
-    cursor: pointer;
-    font-size: 26px;
-    margin-top: 20px;
+    cursor: crosshair;
+    font-size: 35px;
+    margin-top: 25px;
 }
 
-
-.cat:hover {
+.category:hover {
     opacity: 0.7;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 #play-again:hover,
 #answer:hover {
-    opacity: 0.8;
+    opacity: 0.5;
     text-decoration: underline;
 }
 
 .alph:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
-
-
 
 .stand-top {
     border-top: 15px solid brown;
@@ -151,7 +151,6 @@ li {
     width: 20px;
     background: brown;
     margin: 0 auto;
-  
 }
 
 .stand-base {
@@ -163,9 +162,7 @@ li {
     padding-top: 10px;
     font-weight: bolder;
     color: yellow;
-    
-    
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .man {
@@ -183,22 +180,24 @@ li {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border: 6px solid #ffffff;
+    border: 5px solid #6e93da;
     left: 30%;
     margin: 0 auto;
 }
 
 .eyes,
 .frown {
-    font-weight: bold;
+    font-weight: bolder;
     opacity: 0;
     font-family: arial, sans-serif;
+    text-decoration: &times, &nbsp, &times;
 }
 
 .eyes {
     position: absolute;
     top: 6%;
     left: 45%;
+    text-decoration: &times, &nbsp, &times;
 }
 
 .frown {
@@ -210,15 +209,15 @@ li {
 }
 
 .torso {
-    height: 100px;
+    height: 99px;
     margin: 0 auto;
 }
 
 .torso,
 .arm,
 .leg {
-    width: 6px;
-    background: white;
+    width: 5px;
+    background: rgba(255, 255, 255, 0.849);
 }
 
 .arm,
@@ -228,17 +227,17 @@ li {
 
 .arm {
     left: 49%;
-    top: 18%;
+    top: 10%;
     transform-origin: bottom;
     position: absolute;
 }
 
 .left-arm {
-    transform: rotate(-55deg);
+    transform: rotate(-100deg);
 }
 
 .right-arm {
-    transform: rotate(55deg);
+    transform: rotate(100deg);
 }
 
 .leg {
@@ -249,11 +248,11 @@ li {
 }
 
 .left-leg {
-    transform: rotate(-135deg);
+    transform: rotate(-120deg);
 }
 
 .right-leg {
-    transform: rotate(135deg);
+    transform: rotate(120deg);
 }
 
 @media screen and (max-width: 870px) {
@@ -296,12 +295,11 @@ li {
     }
     .stand-top {
         height: 10px;
-            width: 120px;
-            margin-left: 40px;
+        width: 120px;
+        margin-left: 40px;
     }
     .pole {
         height: 140px;
-      
     }
     .stand-base {
         width: 150px;
@@ -313,7 +311,6 @@ li {
         position: relative;
         width: 180px;
         margin: 0 auto;
-
     }
     .torso {
         height: 50px;
