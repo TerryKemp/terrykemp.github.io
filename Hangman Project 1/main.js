@@ -40,7 +40,7 @@ var player = ' '
 var array = null
 var canvas = $('.word')
 
-/* action buttons */
+/* action buttons */ 
 category.on('click', startGame)
 category.on('click', makeWord)
 category.on('click', holder)
