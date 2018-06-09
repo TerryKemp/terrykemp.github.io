@@ -1,0 +1,369 @@
+/* changing torso to body in all documents will not work.
+neither will changing stand-top/base.  I do not know why
+*/
+
+body {
+    font-family: cursive, arial, sans-serif;
+    background-image: url("https://i.warosu.org/data/tg/img/0321/06/1400219320024.jpg");
+    background-size: cover;
+    color: red;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+    /* only good for newer browers, but works on everything i have tried */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-left {
+    padding: 40px 5px 25px 20px;
+}
+
+.main-right {
+    padding: 50px 20px 25px 0px;
+}
+
+.end-messages {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+footer {
+    padding: 50px 20px;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+h2 {
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 3px;
+}
+
+li {
+    display: inline;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    cursor: crosshair;
+}
+
+.word {
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 450px;
+    margin: 30px auto 0 auto;
+    text-emphasis:  bold;
+}
+
+.alph-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.alph {
+    margin: 7px;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: crosshair;
+    text-transform: uppercase;
+}
+
+#result,
+#play-again,
+#answer {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 20px auto 0 auto;
+    text-emphasis: bold;
+}
+
+#play-again,
+#answer {
+    cursor: crosshair;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.category:hover {
+    opacity: 0.7;
+    cursor: crosshair;
+}
+
+#play-again:hover,
+#answer:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.alph:hover {
+    opacity: 1;
+}
+
+.stand-top {
+    border-top: 15px solid brown;
+    border-left: 20px solid brown;
+    border-right: 20px solid brown;
+    width: 179px;
+    height: 30px;
+    margin-left: 90px;
+}
+
+.stand-left,
+.man {
+    float: left;
+    width: 200px;
+}
+
+.pole {
+    height: 275px;
+    width: 20px;
+    background: brown;
+    margin: 0 auto;
+}
+
+.stand-base {
+    border-top: 15px solid burlywood;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.man {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.hidden {
+    display: none;
+}
+
+.head {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 5px solid #6e93da;
+    left: 30%;
+    margin: 0 auto;
+}
+
+.eyes,
+.frown {
+    font-weight: bolder;
+    opacity: 0;
+    font-family: arial, sans-serif;
+ ;
+}
+
+.eyes {
+    position: absolute;
+    top: 6%;
+    left: 45%;
+    text-decoration: &bull, &nbsp, &bull;
+}
+
+.frown {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    font-size: 24px;
+}
+
+.torso {
+    height: 99px;
+    margin: 0 auto;
+}
+
+.torso,
+.arm,
+.leg {
+    width: 5px;
+    background: rgba(255, 255, 255, 0.849);
+}
+
+.arm,
+.leg {
+    height: 75px;
+}
+
+.arm {
+    left: 49%;
+    top: 10%;
+    transform-origin: bottom;
+    position: absolute;
+}
+
+.left-arm {
+    transform: rotate(-100deg);
+}
+
+.right-arm {
+    transform: rotate(100deg);
+}
+
+.leg {
+    transform-origin: bottom;
+    position: absolute;
+    left: 49%;
+    top: 31%;
+}
+
+.left-leg {
+    transform: rotate(-120deg);
+}
+
+.right-leg {
+    transform: rotate(120deg);
+}
+
+@media screen and (max-width: 870px) {
+    main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer {
+        margin-top: auto;
+    }
+    .main-right {
+        order: -1;
+        margin-top: 0px;
+    }
+    .end-messages {
+        left: 37%;
+        top: 40%;
+    }
+    #answer {
+        padding-bottom: 10px;
+    }
+    .word {
+        font-size: 26px;
+        width: 100%;
+        margin: 30px auto;
+    }
+    h2,
+    li {
+        font-size: 24px;
+    }
+    .main-left,
+    .main-right {
+        padding: 0 10px;
+    }
+    .main-left {
+        margin: 0 auto;
+    }
+    .stand-left {
+        width: 100px;
+    }
+    .stand-top {
+        height: 10px;
+        width: 120px;
+        margin-left: 40px;
+    }
+    .pole {
+        height: 140px;
+    }
+    .stand-base {
+        width: 150px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .man {
+        height: 100px;
+        position: relative;
+        width: 180px;
+        margin: 0 auto;
+    }
+    .torso {
+        height: 50px;
+    }
+    .arm,
+    .leg {
+        height: 35px;
+    }
+    .arm {
+        top: 40%;
+    }
+    .leg {
+        top: 64%
+    }
+    .head {
+        width: 40px;
+        height: 40px;
+    }
+    .eyes {
+        top: 8%;
+        left: 45%;
+        letter-spacing: -1px;
+    }
+    .frown {
+        top: 15%;
+        left: 49%;
+    }
+    .alph-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2,
+    li,
+    .alph,
+    #result,
+    #play-again,
+    #answer {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .word {
+        font-size: 18px;
+    }
+    .alph {
+        font-size: 16px;
+    }
+    footer {
+        padding: 0px 20px;
+    }
+}
