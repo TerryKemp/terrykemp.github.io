@@ -55,7 +55,7 @@ a {
   display: inline-grid;
   grid-gap: 25px;
   grid-template-columns: 1fr 150px 150px 150px 1fr;
-  grid-template-rows: 50px 150px 150px 150px;
+  grid-template-rows: 50px 155px 155px 155px;
 }
 
 .projects_title {
@@ -127,10 +127,11 @@ a {
 }
 
 .tile1 {
-  background-color: rgb(12, 141, 0);
+  background-color: rgb(97, 194, 157);
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+  color: black
 }
 .skills_title {
   grid-row: 1;
@@ -400,7 +401,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 100px 100px 100px 1fr;
-  grid-template-rows: 50px 100px 100px 100px;
+  grid-template-rows: 50px 110px 110px 110px;
 }
 
 .projects_title {
@@ -471,7 +472,7 @@ a {
   padding: 10px;
 }
 .tile1 {
-  background-color: rgb(12, 141, 0);
+  background-color : rgb(97, 194, 157);
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
