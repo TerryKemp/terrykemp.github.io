@@ -511,7 +511,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .block p {
-  color: #fff;
+  color: #fff !important;
   margin-bottom: 45px;
 }
 
